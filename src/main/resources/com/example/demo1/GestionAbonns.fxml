@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controllers.AbonnementController">
+   <children>
+      <TableView fx:id="abonnTableView" layoutX="66.0" layoutY="89.0" prefHeight="221.0" prefWidth="444.0">
+        <columns>
+          <TableColumn fx:id="idAbonnTableColumn" prefWidth="92.19998168945312" text="id_Abonn" />
+          <TableColumn fx:id="cinTableColumn" prefWidth="115.00001525878906" text="CIN Lecteur" />
+            <TableColumn fx:id="fraisTableColumn" prefWidth="110.4000244140625" text="Frais  (DT)" />
+            <TableColumn fx:id="dateCTableColumn" prefWidth="126.5999755859375" text="Date Création" />
+        </columns>
+      </TableView>
+       <Label alignment="CENTER" layoutX="134.0" layoutY="22.0" prefHeight="47.0" prefWidth="308.0" text="Liste des Abonnements" textFill="#c495aa" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font></Label>
+
+       <Button fx:id="afficherListeAbonnBTN" layoutX="104.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleAfficherListeAbonnements" prefHeight="26.0" prefWidth="228.0" text="Afficher la liste des abonnements" />
+      <Button fx:id="retourAbnBTN" layoutX="368.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleAfficherFenetreLecteurs" prefHeight="26.0" prefWidth="90.0" text="Retour" />
+   </children>
+</AnchorPane>

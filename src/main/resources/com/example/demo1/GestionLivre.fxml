@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controllers.LivreController">
+    <children>
+        <Button fx:id="rechercheBTN" layoutX="500.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleAfficherFenetreRechercheLivres" prefHeight="26.0" prefWidth="92.0" text="Rechercher " />
+        <Button fx:id="supprimerBTN" layoutX="500.0" layoutY="187.0" mnemonicParsing="false" onAction="#AfficherFenetreSupprimerLivre" prefHeight="26.0" prefWidth="92.0" text="Supprimer " />
+        <Button fx:id="ajoutBTN" layoutX="500.0" layoutY="142.0" mnemonicParsing="false" onAction="#AfficherFenetreAjouterLivre" prefHeight="26.0" prefWidth="92.0" text="Ajouter" />
+        <TableView fx:id="livreTable" layoutX="2.0" layoutY="70.0" prefHeight="286.0" prefWidth="490.0">
+            <columns>
+                <TableColumn fx:id="codeColumn" prefWidth="43.200011253356934" text="code" />
+                <TableColumn fx:id="titreColumn" prefWidth="115.5999984741211" text="Titre" />
+                <TableColumn fx:id="auteurColumn" prefWidth="99.00003051757812" text="Auteur" />
+                <TableColumn fx:id="isbnColumn" prefWidth="65.60003662109375" text="ISBN" />
+                <TableColumn fx:id="typeColumn" prefWidth="85.0" text="Type" />
+            <TableColumn fx:id="dipoColumn" prefWidth="80.5999755859375" text="Diponibilite" />
+            </columns>
+        </TableView>
+          <Button fx:id="afficheLivreBTN" layoutX="104.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleAfficherListeLivre" prefHeight="26.0" prefWidth="171.0" text="Afficher Tous Les Livres" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="14.0" prefHeight="40.0" prefWidth="400.0" text="Liste des Livres" textAlignment="CENTER" textFill="#c495aa" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="retourHomeBTN" layoutX="307.0" layoutY="360.0" mnemonicParsing="false" onAction="#AfficherFenetreHome" prefHeight="26.0" prefWidth="75.0" text="Retour" />
+    </children>
+
+</AnchorPane>

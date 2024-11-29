@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controllers.LecteurController">
+
+        <TextField fx:id="cinTextField" layoutX="210.0" layoutY="86.0" prefHeight="26.0" prefWidth="270.0" />
+        <TextField fx:id="nomTextField" layoutX="211.0" layoutY="140.0" prefHeight="26.0" prefWidth="270.0" />
+        <TextField fx:id="PrenomTextField" layoutX="212.0" layoutY="200.0" prefHeight="26.0" prefWidth="270.0" />
+
+        <Button fx:id="ajouterlecteurButton" alignment="CENTER" layoutX="231.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleAjouterLecteurEtAbonn" prefHeight="26.0" prefWidth="75.0" text="Ajouter" />
+        <Label layoutX="119.0" layoutY="89.0" prefHeight="18.0" prefWidth="45.0" text="CIN">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="118.0" layoutY="143.0" prefHeight="18.0" prefWidth="46.0" text="Nom">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="119.0" layoutY="203.0" prefHeight="20.0" prefWidth="63.0" text="Prénom">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+
+        <Label alignment="CENTER" layoutX="172.0" layoutY="25.0" prefHeight="45.0" prefWidth="270.0" text="Ajouter Un Lecteur" textAlignment="CENTER" textFill="#c495aa" underline="true" AnchorPane.topAnchor="25.0">
+            <font>
+                <Font name="System Bold Italic" size="26.0" />
+            </font>
+        </Label>
+        <Button fx:id="retourBTN" layoutX="328.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleAfficherFenetreLecteurs" prefHeight="26.0" prefWidth="75.0" text="Retour" />
+   <Label layoutX="119.0" layoutY="244.0" prefHeight="20.0" prefWidth="63.0" text="Frais">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="fraisTextField" layoutX="210.0" layoutY="241.0" prefHeight="26.0" prefWidth="270.0" />
+
+
+
+</AnchorPane>

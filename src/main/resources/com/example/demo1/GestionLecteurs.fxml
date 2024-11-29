@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controllers.LecteurController">
+    <TableView fx:id="lecteurTableView" layoutX="26.0" layoutY="68.0" prefHeight="262.0" prefWidth="397.0">
+      <columns>
+          <TableColumn fx:id="cinTableColumn" prefWidth="121.60000228881836" text="CIN" />
+          <TableColumn fx:id="nomTableColumn" prefWidth="116.00001525878906" text="Nom" />
+          <TableColumn fx:id="prenomTableColumn" prefWidth="160.20001220703125" text="Prénom" />
+      </columns>
+    </TableView>
+    <Button fx:id="afficherListeLecteursBTN" layoutX="128.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleAfficherListeLecteurs" text="Afficher la liste des Lecteurs" />
+    <Button fx:id="ajoutLectBTN" layoutX="464.0" layoutY="117.0" mnemonicParsing="false" onAction="#AfficherFenetreAjouterLecteur" prefHeight="26.0" prefWidth="120.0" text="Ajouter Lecteur" />
+    <Button fx:id="suppLectBTN" layoutX="464.0" layoutY="157.0" mnemonicParsing="false" onAction="#AfficherFenetreSupprimerLecteur" prefHeight="26.0" prefWidth="120.0" text="Supprimer Lecteur" />
+    <Button fx:id="rechLecteursBTN" layoutX="464.0" layoutY="200.0" mnemonicParsing="false" onAction="#AfficherFenetreRechercheLecteur" prefHeight="26.0" prefWidth="120.0" text="Rechercher" />
+    <Label alignment="CENTER" layoutX="116.0" layoutY="14.0" prefHeight="47.0" prefWidth="308.0" text="Liste des Lecteurs" textFill="#c495aa" underline="true">
+        <font>
+          <Font name="System Bold Italic" size="25.0" />
+        </font>
+    </Label>
+    <Button fx:id="listeAbonnBTN" layoutX="464.0" layoutY="241.0" mnemonicParsing="false" onAction="#AfficherFenetreAfficherAbonns" prefHeight="26.0" prefWidth="120.0" text="Liste Abonnements" />
+    <Button fx:id="retourHomeBTN" layoutX="324.0" layoutY="343.0" mnemonicParsing="false" onAction="#AfficherFenetreHome" prefHeight="26.0" prefWidth="69.0" text="Retour" />
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controllers.AjouterLivreController">
+   <TextField fx:id="titreTextField" layoutX="210.0" layoutY="86.0" prefHeight="26.0" prefWidth="270.0" />
+   <TextField fx:id="auteurTextField" layoutX="211.0" layoutY="140.0" prefHeight="26.0" prefWidth="270.0" />
+   <TextField fx:id="isbnTextField" layoutX="212.0" layoutY="200.0" prefHeight="26.0" prefWidth="270.0" />
+   <Button fx:id="ajouterButton" alignment="CENTER" layoutX="260.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleAjouterLivre" prefHeight="26.0" prefWidth="75.0" text="Ajouter" />
+   <Label layoutX="119.0" layoutY="89.0" prefHeight="18.0" prefWidth="45.0" text="Titre">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="118.0" layoutY="143.0" prefHeight="18.0" prefWidth="46.0" text="Auteur">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="119.0" layoutY="203.0" prefHeight="18.0" prefWidth="46.0" text="ISBN">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="119.0" layoutY="262.0" prefHeight="18.0" prefWidth="46.0" text="Type">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="172.0" layoutY="25.0" prefHeight="45.0" prefWidth="270.0" text="Ajouter Un Livre" textAlignment="CENTER" textFill="#c495aa" underline="true" AnchorPane.topAnchor="25.0">
+      <font>
+         <Font name="System Bold Italic" size="26.0" />
+      </font>
+   </Label>
+   <Button fx:id="retourBTN" layoutX="347.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleAfficherFenetreLivres" prefHeight="26.0" prefWidth="75.0" text="Retour" />
+   <ChoiceBox fx:id="typeChoiceBox" layoutX="212.0" layoutY="260.0" prefHeight="26.0" prefWidth="270.0" />
+</AnchorPane>

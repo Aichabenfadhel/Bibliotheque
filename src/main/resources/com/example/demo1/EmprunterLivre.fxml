@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controllers.EmprunterController">
+
+    <Label alignment="CENTER" layoutX="172.0" layoutY="25.0" prefHeight="45.0" prefWidth="270.0" text="Emprunter Un Livre" textAlignment="CENTER" textFill="#c495aa" underline="true" AnchorPane.topAnchor="25.0">
+        <font>
+            <Font name="System Bold Italic" size="26.0" />
+        </font>
+    </Label>
+   <Label layoutX="87.0" layoutY="127.0" text="CIN Lecteur">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <TextField fx:id="cinTextField" layoutX="191.0" layoutY="125.0" prefHeight="26.0" prefWidth="237.0" />
+   <TextField fx:id="titreTextField" layoutX="191.0" layoutY="175.0" prefHeight="26.0" prefWidth="238.0" />
+   <Label layoutX="86.0" layoutY="178.0" prefHeight="18.0" prefWidth="77.0" text="Titre Livre">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Button fx:id="emprunterBTN" layoutX="246.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleEmprunterLivre" prefHeight="26.0" prefWidth="107.0" text="Emprunter" />
+   <Button fx:id="retourBTN" layoutX="442.0" layoutY="300.0" mnemonicParsing="false" onAction="#AfficherFenetreHome" prefHeight="26.0" prefWidth="98.0" text="Retour" />
+   <Button fx:id="listeLivreBTN" layoutX="247.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleAfficherFenetreLivres" prefHeight="26.0" prefWidth="166.0" text="Liste de tous les Livres" />
+   <Button fx:id="listelivEmpBTN" layoutX="57.0" layoutY="300.0" mnemonicParsing="false" onAction="#AfficherFenetreListeLivresEmpruntes" prefHeight="26.0" prefWidth="166.0" text="Liste des livres empruntés" />
+
+</AnchorPane>

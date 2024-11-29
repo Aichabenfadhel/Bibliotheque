@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controllers.LecteurController">
+
+    <Label alignment="CENTER" layoutX="166.0" layoutY="45.0" prefHeight="44.0" prefWidth="267.0" text="Suppression d'un Lecteur " textFill="#c495aa" underline="true">
+        <font>
+            <Font name="System Bold Italic" size="22.0" />
+        </font>
+    </Label>
+    <TextField fx:id="suppIdAbonnTextArea" layoutX="211.0" layoutY="130.0" prefHeight="26.0" prefWidth="178.0" />
+    <Label layoutX="92.0" layoutY="133.0" prefHeight="20.0" prefWidth="118.0" text="ID Abonnement ">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <ButtonBar layoutX="196.0" layoutY="233.0" prefHeight="40.0" prefWidth="178.0">
+        <buttons>
+            <Button fx:id="SupprimerBTN" mnemonicParsing="false" onAction="#handleSupprimerLecteurEtAbonn" text="Supprimer" />
+            <Button fx:id="suppRetourBTN" layoutX="135.0" layoutY="17.0" mnemonicParsing="false" onAction="#handleAfficherFenetreLecteurs" text="Retour" />
+        </buttons>
+    </ButtonBar>
+    <Label layoutX="132.0" layoutY="175.0" prefHeight="20.0" prefWidth="38.0" text="CIN">
+        <font>
+          <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <TextField fx:id="suppCinTextArea" layoutX="210.0" layoutY="172.0" prefHeight="26.0" prefWidth="178.0" />
+</AnchorPane>

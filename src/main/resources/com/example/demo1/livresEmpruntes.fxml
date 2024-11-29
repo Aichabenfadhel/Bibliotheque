@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controllers.EmprunterController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+             <Label alignment="CENTER" layoutX="133.0" layoutY="25.0" prefHeight="46.0" prefWidth="350.0" text="Liste des livres Empruntés" textAlignment="CENTER" textFill="#c495aa" underline="true" AnchorPane.topAnchor="25.0">
+                 <font>
+                     <Font name="System Bold Italic" size="26.0" />
+                 </font>
+             </Label>
+             <TableView fx:id="livreEmpTable" layoutX="49.0" layoutY="86.0" prefHeight="213.0" prefWidth="450.0">
+                 <columns>
+                     <TableColumn fx:id="idLecteurColumn" prefWidth="118.99999713897705" text="CIN Lecteur" />
+                     <TableColumn fx:id="idLivreColumn" prefWidth="83.39999389648438" text="Code Livre" />
+                     <TableColumn fx:id="DateEmpColumn" prefWidth="112.80000305175781" text="Date d'emprunt" />
+                     <TableColumn fx:id="DateRetourColumn" prefWidth="135.4000244140625" text="Date de retour" />
+
+                 </columns>
+             </TableView>
+            <Button fx:id="listelivresEmpBTN" layoutX="112.0" layoutY="315.0" mnemonicParsing="false" onAction="#showLivresEmpruntes" prefHeight="26.0" prefWidth="148.0" text="Afficher Liste Livres " />
+            <Button fx:id="retourBTN" layoutX="308.0" layoutY="315.0" mnemonicParsing="false" onAction="#AfficherFenetreEmprunter" prefHeight="26.0" prefWidth="104.0" text="Retour" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
